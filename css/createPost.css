@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts..googleapiscom/css2?family=Poppins:wght@400;500;700&display=swap");
+
+@import url("./reset.css");
+@import url("./root.css");
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+  margin: 60px;
+  padding: 60px;
+  border-radius: 24px;
+  font-family: var(--font-primary);
+  color: var(--secondary-text);
+}
+
+.form-container h1 {
+  margin-bottom: 20px;
+  color: var(--primary-text-blue);
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 450px;
+}
+
+.form-group input {
+  padding: 10px;
+  border: transparent;
+  background-color: var(--form-bg);
+  border-radius: 5px;
+}
+
+#post-content {
+  padding: 10px;
+  border: transparent;
+  background-color: var(--form-bg);
+}
+
+.createpost-button {
+  padding: var(--padding-button);
+  border: transparent;
+  color: var(--white);
+  background-color: var(--primary-btn-purple);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: var(--font-primary);
+}
+
+.createpost-button:hover {
+  transform: scale(1.06);
+}
+
+@media (max-width: 650px) {
+  .form-container {
+    max-width: 450px;
+    margin: 40px;
+    padding: 40px;
+  }
+
+  .form-group {
+    max-width: 300px;
+  }
+
+  .form-container form {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 435px) {
+  .form-container {
+    max-width: 420px;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .form-group {
+    max-width: 280px;
+  }
+
+  .form-container form {
+    gap: 7px;
+  }
+}
+
+
+

@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Post</title>
+  <link rel="stylesheet" href="/css/createPost.css">
+ </head>
+ <body>
+  <header>
+    <div class="logo">
+      <img src="./assets/Bondly.svg" alt="Logo Image">
+    </div>
+    <div class="nav-right">
+     <ul>
+      <li><a href="">Charles Deo</a></li>
+      <li><a href="">Log Out</a></li>
+     </ul>
+    </div>
+    
+  </header>
+   <main>
+      <section class="form-container">
+        <h1>Create Post</h1>
+        <form>
+          <div class="form-group">
+            <label for="post-title">Post Title</label>
+            <input
+              type="text"
+              id="post-title"
+              placeholder="Post Title"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="post-content">Post Content</label>
+            <textarea
+              id="post-content"
+              name="post-content"
+              rows="10"
+              placeholder="Write your post content here..."
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="image-URL">Image URL</label>
+            <input type="text" id="image-URL" />
+          </div>
+          <div class="form-group">
+            <label for="image-alt">Image Alt Text</label>
+            <input type="text" is0 d="image-alt" name="image-alt" />
+          </div>
+          <div class="form-group">
+            <label for="tags">Tags (Separate by commas)</label>
+            <input type="text" id="tags" name="tags" />
+          </div>
+          <button type="submit" class="createpost-button">Post</button>
+        </form>
+      </section>
+    </main>
+
+ </body>
+ </html>

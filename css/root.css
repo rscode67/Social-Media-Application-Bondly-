@@ -1,0 +1,17 @@
+:root {
+  --primary-text-purple: #AE62BB;
+  --primary-text-blue: #757EE9;
+  --secondary-text: #686767;
+  --white: #ffffff;
+  --primary-btn-purple: #AE62BB;
+  --primary-btn-blue: #757EE9;
+
+  --font-primary: 'Josefin Sans', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+
+  --form-bg: #F5F5F5;
+  --post-bg; #F5F5F5;
+  --border: rgb(239, 226, 226);
+
+  --padding-button: 10px 30px;
+}
