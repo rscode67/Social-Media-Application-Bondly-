@@ -61,7 +61,7 @@ main {
 }
 
 .createpost-button {
-  padding: var(--padding-button);
+  padding: var(--padding-btn);
   border: transparent;
   color: var(--white);
   background-color: var(--primary-btn-purple);

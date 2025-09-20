@@ -57,7 +57,7 @@ main {
 }
 
 #login-btn {
-  padding: var(--padding-button);
+  padding: var(--padding-btn);
   border: none;
   color: var(--white);
   background-color: var(--primary-btn-purple);
@@ -68,7 +68,7 @@ main {
 }
 
 #create-btn {
-  padding: var(--padding-button);
+  padding: var(--padding-btn);
   border: none;
   color: var(--white);
   background-color: var(--primary-btn-blue);

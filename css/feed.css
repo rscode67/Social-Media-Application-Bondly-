@@ -70,11 +70,12 @@ main {
 }
 
 .feed-container button {
-  padding: var(--padding-button);
+  padding: var(--padding-btn);
   border: transparent;
   color: var(--white);
   background-color: var(--primary-btn-blue);
   border-radius: 10px;
   cursor: pointer;
   font-family: var(--font-primary);
+  font-size: var(--font-primary);
 }

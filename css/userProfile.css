@@ -12,6 +12,26 @@ main {
   flex-direction: column;
 }
 
+
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border);
+  margin: 50px;
+  padding: 80px;
+  border-radius: 24px;
+  font-family: var(--font-primary);
+  color: var(--secondary-text);
+  border-radius: 5px;
+  height: 500px;
+
+  width: 450px;
+  background-color: var(--form-bg);
+}
+
 .profile-container {
   display: flex;
   flex-direction: column;
@@ -43,6 +63,20 @@ main {
   margin-right: 10px;
 }
 
+.post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
 .profile-container .action-buttons {
   display: flex;
   justify-content: space-around;
@@ -60,3 +94,15 @@ main {
   cursor: pointer;
   font-family: var(--font-primary);
   font-size: var(--font-primary)
+}
+
+.post-actions button {
+  padding: var(--padding-btn);
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-btn-purple);
+  color: var(--white);
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-size: var(--font-primary)
+}
