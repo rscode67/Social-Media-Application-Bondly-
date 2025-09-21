@@ -10,14 +10,16 @@ header {
   padding: 20px 0;
   border-bottom: 1px solid var(--border);
   display: flex;
+  
   justify-content: center;
   align-items: center;
 }
 
 .nav-right {
- position: absolute;
+  position: absolute;
+  right: 16%;
  display: block;
- left: 85%;
+ 
 }
 
 .header-profile-pic {
@@ -25,8 +27,8 @@ header {
   height: 50px;
   border-radius: 50%;
   position: absolute;
-  left: 120%;
-  top: 9px;
+  left: 105%;
+  top: 10px;
 }
 
 .nav-right li {
@@ -42,21 +44,10 @@ header {
   
 }
 
-
-@media (max-width: 768px) {
-  main {
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+@media (max-width:656px) {
+  header {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
   }
-
-  .nav-right {
-    position: absolute;
-    display: block;
-    left: 70%;
-  }
-
-  
-
-}   
-
+}
