@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up</title>
   <link rel="stylesheet" href="/css/signup.css">
+  <script src="./js/signup.js"></script>
 </head> 
 <body>
   <main>
@@ -29,12 +30,13 @@
           <input type="password" id="password" placeholder="Password" required>
         </div>
 
-        <button id="signup-btn" type="submit">Sign Up</button>
+        <button onclick="registerUser()" id="signup-btn" type="submit">Sign Up</button>
         
         <a href="login.html">Already have an account?</a>
       </form>
+      <p id="message"></p>
     </section>
   </main>
-  
+  <script src="./js/signup.js" defer></script>
 </body>
 </html>
