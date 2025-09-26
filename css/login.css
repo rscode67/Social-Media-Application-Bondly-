@@ -39,6 +39,12 @@ main {
   gap: 30px;
 }
 
+.form-container a {
+  text-decoration: none;
+  text-align: center;
+  
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -76,7 +82,9 @@ main {
   cursor: pointer;
   width: 230px;
   font-size: 17px;
+  font-family: "Poppins", sans-serif;
 }
+  
 
 @media (max-width: 979px) {
   main {

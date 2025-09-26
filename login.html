@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" href="/css/login.css">
+  <script src="./js/login.js"></script>
 </head> 
 <body>
   <main>
@@ -16,19 +17,19 @@
 
     </section>
     <section class="form-container">
-      <form>
+      <form id="loginForm">
         <div class="form-group">
           <label for="email"></label>
-          <input type="email" id="email" placeholder="Email" >
+          <input type="email" id="email" placeholder="Email" required>
         </div>
         <div class="form-group">
           <label for="password"></label>
-          <input type="password" id="password" placeholder="Password" >
+          <input type="password" id="password" placeholder="Password" required>
         </div>
 
         <button id="login-btn" type="submit">Login</button>
         
-        <a href="./signup.html"></a><button id="create-btn" type="submit">Create a new account</button>
+        <a href="./signup.html" id="create-btn">Create a new account</a>
       </form>
     </section>
   </main>

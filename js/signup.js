@@ -5,8 +5,9 @@ async function registerUser() {
   const messageElem = document.getElementById("message");
 
   if (!name || !email || !password) {
-    messageElem.textColor = "red";
+    messageElem.style.color = "red";
     messageElem.textContent = "Please fill in all fields.";
+    
     return;
   }
 

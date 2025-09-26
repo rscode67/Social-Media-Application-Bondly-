@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Single Post</title>
     <link rel="stylesheet" href="/css/userProfile.css" />
+    <script src="./js/userProfile.js"></script>
   </head>
   <body>
     <header>
@@ -13,8 +14,8 @@
       </div>
       <div class="nav-right">
         <ul>
-          <li><a href="./userProfile.html">Reuel Santos</a></li>
-          <li><a href="">Log Out</a></li>
+          <li><a id="profileName"></a></li>
+          <li><a href="" onclick="logout()">Log Out</a></li>
         </ul>
         <img
           src="./assets/profilepic.jpg"
@@ -31,9 +32,9 @@
             src="./assets/profilepic.jpg"
             alt="Profile Picture"
           />
-          <h2>Reuel Santos</h2>
-          <p>@santos.noroff.no</p>
-          <p>Followers 2 | Following 5</p>
+          <h2 id="profileFullName">User Name</h2>
+          <p id="profileEmail">@santos.noroff.no</p>
+          <p id="followersCount">Followers 0 | Following 0</p>
         </div>
         <div class="action-buttons">
           <a href="./createPost.html"
@@ -44,8 +45,8 @@
           >
         </div>
       </section>
-      <section class="post-container">
-        <div class="post-content">
+      <section id="postContainer" class="post-container">
+        <!-- <div class="post-content">
           <h2>Living Offgrid</h2>
           <p>
             This is a sample post content. It can include text, images, and
@@ -62,7 +63,7 @@
               ><button class="read-button">Edit Post</button></a
             >
           </div>
-        </div>
+        </div> -->
       </section>
     </main>
   </body>

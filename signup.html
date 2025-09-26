@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up</title>
   <link rel="stylesheet" href="/css/signup.css">
-  <script src="./js/signup.js"></script>
+  <script src="./js/signup.js" defer></script>
 </head> 
 <body>
   <main>
@@ -13,7 +13,9 @@
       <div class="welcome-text">
         <h1>Bondly</h1>
       </div>
-      <div class="description">Share moments, connect with friends, and discover new communities in a space designed for genuine connections.</div>
+      <div class="description">
+        <p>Share moments, connect with friends, and discover new communities in a space designed for genuine connections.</p>
+      </div>
 
     </section>
     <section class="form-container">
@@ -25,6 +27,7 @@
         <div class="form-group">
           <label for="email"></label>
           <input type="email" id="email" placeholder="Email" required>
+        </div>
         <div class="form-group">
           <label for="password"></label>
           <input type="password" id="password" placeholder="Password" required>
@@ -37,6 +40,6 @@
       <p id="message"></p>
     </section>
   </main>
-  <script src="./js/signup.js" defer></script>
+  
 </body>
 </html>
