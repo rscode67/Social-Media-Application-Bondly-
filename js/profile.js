@@ -18,7 +18,6 @@ const followersCount = document.getElementById("followersCount");
 const postContainer = document.getElementById("postContainer");
 const followBtn = document.getElementById("followBtn");
 
-
 async function loadHeaderUser() {
   try {
     const res = await fetch(
@@ -41,7 +40,6 @@ async function loadHeaderUser() {
   }
 }
 
-
 async function loadProfile() {
   try {
     const res = await fetch(
@@ -60,25 +58,24 @@ async function loadProfile() {
     renderProfile(data);
     renderPosts(data.posts);
 
-    
     if (username !== loggedInUser) {
       setupFollowButton(data);
     } else {
-      followBtn.style.display = "none"; 
+      followBtn.style.display = "none";
     }
   } catch (err) {
     postContainer.innerHTML = `<p style="color:red;">${err.message}</p>`;
   }
 }
 
-
 function renderProfile(profile) {
   profileAvatar.src = profile.avatar?.url || "./assets/profilepic.jpg";
   profileFullName.textContent = profile.name;
   profileEmail.textContent = profile.email || "@unknown.email";
-  followersCount.textContent = `Followers ${profile._count?.followers || 0} | Following ${profile._count?.following || 0}`;
+  followersCount.textContent = `Followers ${
+    profile._count?.followers || 0
+  } | Following ${profile._count?.following || 0}`;
 }
-
 
 function renderPosts(posts) {
   if (!posts || posts.length === 0) {
@@ -95,7 +92,9 @@ function renderPosts(posts) {
             <p>${post.body || ""}</p>
             ${
               post.media?.url
-                ? `<img class="post-image" src="${post.media.url}" alt="${post.media.alt || "Post image"}" />`
+                ? `<img class="post-image" src="${post.media.url}" alt="${
+                    post.media.alt || "Post image"
+                  }" />`
                 : ""
             }
             <div class="tags">
@@ -106,7 +105,9 @@ function renderPosts(posts) {
               }
             </div>
             <div class="post-actions">
-              <a href="./individualPost.html?id=${post.id}" class="view-link">View</a>
+              <a href="./individualPost.html?id=${
+                post.id
+              }" class="view-link">View</a>
             </div>
           </div>
         </section>
@@ -114,7 +115,6 @@ function renderPosts(posts) {
     )
     .join("");
 }
-
 
 function setupFollowButton(profile) {
   let isFollowing = profile.followers?.some((f) => f.name === loggedInUser);
@@ -145,11 +145,9 @@ function setupFollowButton(profile) {
       if (!res.ok)
         throw new Error(respData.errors?.[0]?.message || "Action failed");
 
-      
       isFollowing = !isFollowing;
       updateButton();
 
-      
       let counts = profile._count;
       counts.followers = isFollowing
         ? counts.followers + 1
@@ -163,7 +161,6 @@ function setupFollowButton(profile) {
   });
 }
 
-
 document.getElementById("logout").addEventListener("click", (e) => {
   e.preventDefault();
   if (confirm("Are you sure you want to log out?")) {
@@ -171,7 +168,6 @@ document.getElementById("logout").addEventListener("click", (e) => {
     window.location.href = "login.html";
   }
 });
-
 
 loadHeaderUser();
 loadProfile();
