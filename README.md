@@ -5,35 +5,47 @@ It is a front-end for a social media application that connects to the Noroff Soc
 
 # Features
 
-- Register new users
+- User authentication
 
-- Log in as a user
+  - Register new users
 
-- View all posts (feed)
+  - Log in as a user
 
-- View a single post
+- Posts
 
-- Create, edit, and delete your own posts
+  - View all posts (feed)
 
-- View posts from other users
+  - View a single post
 
-- Follow/unfollow users
+  - Create, edit, and delete your own posts
 
-- Search posts
+  - View posts from other users
 
-- View your own profile
+  - Search posts
+
+- Profiles
+
+  - Follow/unfollow users
+
+  - View your own profile
 
 # Pages
 
-- Login
+- Login Page
 
-- Register
+- Register Page
 
-- Feed
+- Feed Page
 
-- Single post
+- Edit Post Page
 
-- Profile
+- Single post Page
+
+- Profile Page
+
+- User Profile Page
+
+- Create Post Page
 
 # Deployment
 
