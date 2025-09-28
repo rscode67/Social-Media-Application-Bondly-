@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
-@import url(./root.css);
+@import url("./root.css");
 
 header {
   position: relative;
@@ -10,7 +9,7 @@ header {
   padding: 20px 0;
   border-bottom: 1px solid var(--border);
   display: flex;
-  
+
   justify-content: center;
   align-items: center;
 }
@@ -18,8 +17,7 @@ header {
 .nav-right {
   position: absolute;
   right: 16%;
- display: block;
- 
+  display: block;
 }
 
 .header-profile-pic {
@@ -41,10 +39,9 @@ header {
   text-decoration: none;
   color: var(--primary-text-blue);
   font-family: var(--font-primary);
-  
 }
 
-@media (max-width:656px) {
+@media (max-width: 656px) {
   header {
     display: flex;
     justify-content: flex-start;
