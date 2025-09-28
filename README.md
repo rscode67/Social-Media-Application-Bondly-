@@ -47,6 +47,16 @@ It is a front-end for a social media application that connects to the Noroff Soc
 
 - Create Post Page
 
+# Tech Stack
+
+- HTML5
+
+- CSS
+
+- Vanilla Javascript (ES6 modules)
+
+- Noroff API
+
 # Deployment
 
 The app is deployed here:
