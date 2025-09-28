@@ -1,27 +1,26 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Create Post</title>
-  <link rel="stylesheet" href="/css/editPost.css">
- </head>
- <body>
-  <header>
-    <div class="logo">
-      <img src="./assets/Bondly.svg" alt="Logo Image">
-    </div>
-    <div class="nav-right">
-     <ul>
-      <li><a href="./userProfile.html">Reuel Santos</a></li>
-      <li><a href="">Log Out</a></li>
-       
-     </ul>
-     <img src="./assets/profilepic.jpg" alt="Profile Picture" class="header-profile-pic">
-    </div>
-    
-  </header>
-   <main>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Post</title>
+    <link rel="stylesheet" href="/css/editPost.css" />
+    <script src="./js/editPost.js" defer></script>
+    <script src="./js/logOut.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./assets/Bondly.svg" alt="Logo Image" />
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li><a href="./userProfile.html">Go Back</a></li>
+          <li><a href="" onclick="logout()">Log Out</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
       <section class="form-container">
         <h1>Edit Post</h1>
         <form>
@@ -64,6 +63,5 @@
         </form>
       </section>
     </main>
-
- </body>
- </html>
+  </body>
+</html>

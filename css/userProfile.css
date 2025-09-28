@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-@import url("https://fonts..googleapiscom/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 @import url("./reset.css");
 @import url("./root.css");
@@ -8,29 +8,31 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   flex-direction: column;
 }
-
 
 
 .post-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; 
   align-items: center;
   border: 1px solid var(--border);
-  margin: 50px;
-  padding: 30px 80px;
-  border-radius: 24px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  border-radius: 12px;
   font-family: var(--font-primary);
   color: var(--secondary-text);
-  border-radius: 5px;
-  height: 500px;
+  background-color: var(--form-bg);
 
   width: 450px;
-  background-color: var(--form-bg);
+  max-width: 95%; 
+  min-height: 300px;
+  height: auto; 
+  box-sizing: border-box;
+  overflow: hidden; 
 }
+
 
 .profile-container {
   display: flex;
@@ -39,61 +41,47 @@ main {
   align-items: center;
   border: 1px solid var(--border);
   margin-top: 50px;
-  padding: 20px 80px;
-  border-radius: 24px;
+  padding: 20px 40px;
+  border-radius: 12px;
   font-family: var(--font-primary);
   color: var(--secondary-text);
-  border-radius: 5px;
-  width: 450px;
   background-color: var(--form-bg);
+
+  width: 450px;
+  max-width: 95%; 
+  box-sizing: border-box;
 }
 
 .profile-container .profile {
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  
 }
 
 .profile-container .profile-pic {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-right: 10px;
-}
-
-.post-image {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
   margin-bottom: 10px;
 }
 
+
+.post-image {
+  max-width: 100%; 
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover; 
+}
+
+
 .post-actions {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.profile-container .action-buttons {
-  display: flex;
-  justify-content: space-around;
-  gap: 30px;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.profile-container .action-buttons button {
-  padding: var(--padding-btn);
-  border: none;
-  border-radius: 5px;
-  background-color: var(--primary-btn-blue);
-  color: var(--white);
-  cursor: pointer;
-  font-family: var(--font-primary);
-  font-size: var(--font-primary)
+  gap: 12px;
+  flex-wrap: wrap; 
 }
 
 .post-actions button {
@@ -104,5 +92,85 @@ main {
   color: var(--white);
   cursor: pointer;
   font-family: var(--font-primary);
-  font-size: var(--font-primary)
+  font-size: var(--font-primary);
+}
+
+
+.profile-container .action-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-container .action-buttons button {
+  padding: var(--padding-btn);
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-btn-blue);
+  color: var(--white);
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-size: var(--font-primary);
+}
+
+
+.post-actions a {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.post-actions .view-link {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+}
+.post-actions .view-link:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+
+.post-actions .edit-link {
+  background-color: #28a745;
+  color: #fff;
+  border: 1px solid #28a745;
+}
+.post-actions .edit-link:hover {
+  background-color: #1e7e34;
+  border-color: #1e7e34;
+}
+
+
+.back-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+#followBtn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: #2575fc; 
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+#followBtn.following {
+  background: grey; 
 }

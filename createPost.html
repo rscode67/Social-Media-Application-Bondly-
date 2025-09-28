@@ -1,30 +1,26 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Create Post</title>
-  <link rel="stylesheet" href="/css/createPost.css">
-  <script src="./js/logOut.js"></script>
-  <script src="./js/createPost.js"></script>
-  
- </head>
- <body>
-  <header>
-    <div class="logo">
-      <img src="./assets/Bondly.svg" alt="Logo Image">
-    </div>
-    <div class="nav-right">
-     <ul>
-      <li><a href="./userProfile.html">Reuel Santos</a></li>
-      <li><a href="" onclick="logout()">Log Out</a></li>
-       
-     </ul>
-     <img src="./assets/profilepic.jpg" alt="Profile Picture" class="header-profile-pic">
-    </div>
-    
-  </header>
-   <main>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Post</title>
+    <link rel="stylesheet" href="/css/createPost.css" />
+    <script src="./js/logOut.js" defer></script>
+    <script src="./js/createPost.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./assets/Bondly.svg" alt="Logo Image" />
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li><a href="./userProfile.html">Reuel Santos</a></li>
+          <li><a href="" onclick="logout()">Log Out</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
       <section class="form-container">
         <h1>Create Post</h1>
         <form id="createPostForm">
@@ -53,7 +49,7 @@
           </div>
           <div class="form-group">
             <label for="image-alt">Image Alt Text</label>
-            <input type="text" is0 d="image-alt" name="image-alt" />
+            <input type="text" id="image-alt" name="image-alt" />
           </div>
           <div class="form-group">
             <label for="tags">Tags (Separate by commas)</label>
@@ -61,8 +57,8 @@
           </div>
           <button type="submit" class="createpost-button">Post</button>
         </form>
+        <div id="message"></div>
       </section>
     </main>
-
- </body>
- </html>
+  </body>
+</html>
