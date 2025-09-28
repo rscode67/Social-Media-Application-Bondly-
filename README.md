@@ -60,4 +60,4 @@ It is a front-end for a social media application that connects to the Noroff Soc
 # Deployment
 
 The app is deployed here:
-👉 Live Demo
+👉 https://rscode67.github.io/Social-Media-Application-Bondly-/
